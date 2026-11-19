@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121111"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="4dp"
+        android:gravity="end|bottom"
+        android:padding="16dp"
+        android:text="0"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Fila1"/>
+    <LinearLayout
+        android:id="@+id/Fila1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvResultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Fila2"
+        app:layout_constraintVertical_bias="1">
+        <Button
+            android:id="@+id/botonborrar"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="⌫"
+            android:backgroundTint="#C1BFBF"/>
+        <Button
+            android:id="@+id/botoncuadrado"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="x²"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/borrartodo"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="AC"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/botonporcentaje"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="%"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/botondivision"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="÷"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Fila2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Fila1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Fila3">
+        <Button
+            android:id="@+id/botonseno"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="seno"
+            android:backgroundTint="#C1BFBF"/>
+        <Button
+            android:id="@+id/boton7"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="7"
+            android:backgroundTint="#C1BFBF"/>
+
+
+        <Button
+
+            android:id="@+id/boton8"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="8"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/boton9"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="9"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/botonmultiplicacion"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="*"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Fila3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Fila2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/Fila4">
+        <Button
+            android:id="@+id/botoncoseno"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="cos"
+            android:backgroundTint="#C1BFBF"/>
+        <Button
+            android:id="@+id/boton4"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="4"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/boton5"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="5"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/boton6"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="6"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/botonresta"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="-"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Fila4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/Fila5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fila3">
+        <Button
+            android:id="@+id/botontangente"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="tan"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/boton1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="1"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/boton2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="2"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/boton3"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="3"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/botonsuma"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="+" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Fila5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Fila4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1">
+        <Button
+            android:id="@+id/botonmasmenos"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="+/-"
+            android:backgroundTint="#C1BFBF"/>
+        <Button
+            android:id="@+id/botonraiz"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="✓"
+            android:backgroundTint="#C1BFBF"/>
+        <Button
+            android:id="@+id/botonpi"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="π"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/boton0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/botoncoma"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text=","
+            android:backgroundTint="#C1BFBF"/>
+
+        <Button
+            android:id="@+id/botonigual"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="="/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
